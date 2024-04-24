@@ -50,26 +50,26 @@ console.log(generateGreeting("Bob", "Spanish")); // Output: "¡Hola, Bob!"
 console.log(generateGreeting("Charlie", "French")); // Output: "Bonjour, Charlie!"
 console.log(generateGreeting("David")); // Output: "Hello, David!" (Default language used)
 
-// // Problem 13 - highestStudentCountDepartment //
-// const departmentWithHighestCount = highestStudentCountDepartment(school);
-// const result =documents.getElementById('result');
-// result.textContent = `The department with the highest student count is: ${departmentWithHighestCount}`;
+// Problem 13 - highestStudentCountDepartment //
+const departmentWithHighestCount = highestStudentCountDepartment(school);
+const result =document.getElementById('result');
+result.textContent = `The department with the highest student count is: ${departmentWithHighestCount}`;
 
-// function highestStudentCountDepartment(school) {
-//   let highestCountDepartment = null;
-//   let highestStudentCount = 0;
+function highestStudentCountDepartment(school) {
+  let highestCountDepartment = null;
+  let highestStudentCount = 0;
 
-//   for (const departmentName in school) {
-//     const studentCount = school[departmentName].length;
+  for (const departmentName in school) {
+    const studentCount = school[departmentName].length;
 
-//     if (studentCount > highestStudentCount) {
-//       highestStudentCount = studentCount;
-//       highestCountDepartment = departmentName;
-//     }
-//   }
-//   return highestCountDepartment;
-// }
-// console.log(highestStudentCountDepartment(school));//math
+    if (studentCount > highestStudentCount) {
+      highestStudentCount = studentCount;
+      highestCountDepartment = departmentName;
+    }
+  }
+  return highestCountDepartment;
+}
+console.log(highestStudentCountDepartment(school));//math
 
 
 
